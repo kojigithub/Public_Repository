@@ -1,0 +1,210 @@
+/* 全体のリセットと基本スタイル */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style:none;
+}
+
+body {
+  user-select: none;
+  font-family: 'Poppins', sans-serif; /* Google Fontsからインポート */
+  background-color: #f5faff;
+  color: #333;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.flex{
+  margin:0 auto;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+
+.flex2{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  /* width:60%; */
+}
+
+
+.flex3{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  /* width:60%; */
+}
+
+
+
+/* タイトル */
+h1 {
+  font-size: 2.5em;
+  color: #2b6cb0;
+  margin-bottom: 20px;
+}
+
+#Fset{
+ margin-top:10px;
+}
+
+/* コンテナ全体のデザイン */
+.cleateContainer, .formulaContainer, .NumSelectContainer, .ResultContainer {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.formulaContainer{
+  min-height:100px;
+}
+
+.formulaBox{
+  display:block;
+  font-size:16px;
+  width:26px;
+  height:70px;
+  line-height:70px;
+  margin:0 10px;
+  text-align:center;
+  cursor:text;
+  justify-content:center;
+}
+
+.MathSymbol, #equal{
+  margin:0 auto;
+  height:70px;
+  line-height:70px;
+}
+
+#AnswerBox{
+  margin:0 10px;
+  height:70px;
+  line-height:46px;
+  max-width:200px;
+}
+
+.cleateContainer h2 {
+  font-size: 1.5em;
+  color: #4a5568;
+  margin-bottom: 10px;
+}
+
+.plusMinusContainer button{
+  flex-shrink:0;
+  width:50px;
+  margin:5px;
+}
+
+#delete{
+  padding:0;
+}
+
+/* ラジオボタンとラベル */
+input[type="radio"] {
+  display: none; /* ラジオボタンを非表示に */
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  margin: 10px;
+  background: #e2e8f0;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+input[type="radio"]:checked + label {
+  background: #3182ce;
+  color: #fff;
+  transform: scale(1.1); /* 選択中は少し大きく */
+}
+
+/* ボタン */
+button {
+  background: #48bb78;
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #38a169;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* 数字ボタン */
+.Num button {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.Num button:hover {
+  background: #90cdf4;
+  transform: scale(1.1);
+}
+
+/* 答え入力部分 */
+#AnswerBox {
+  font-size: 1.5em;
+  background: #edf2f7;
+  color: #2d3748;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: inline-block;
+  min-width: 100px;
+  text-align: center;
+}
+
+/* 結果ボタン */
+.ResultContainer li {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.2em;
+  color: white;
+  margin: 10px auto;
+  background: #3182ce;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.ResultContainer #Answer {
+  background: #38b2ac;
+}
+
+.ResultContainer #Reset {
+  background: #e53e3e;
+}
+
+.ResultContainer li:hover {
+  transform: scale(1.05);
+}
+
