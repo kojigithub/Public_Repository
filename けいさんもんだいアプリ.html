@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/けいさんもんだいアプリ.css">
+  </head>
+  <body>
+
+    
+   
+    <h1 class="Title">けいさんもんだい</h1>
+    
+    <div class="divcenter">
+      <div class="cleateContainer">
+        <h2 >えらんでください</h2>
+        <div class="MB flex">
+          <input type="radio" name="Type" value="+" id="addition">
+          <label for="addition">たしざん</label>
+          <input type="radio" name="Type" value="-" id="subtraction">
+          <label for="subtraction">ひきざん</label>
+          <input type="radio" name="Type" value="×" id="multiplication">
+          <label for="multiplication">かけざん</label>
+        </div>
+        
+        <div class="LevelSelectContainer MZA MB flex">
+          <input type="radio" name="Level" value="1" id="easy">
+          <label for="easy">みじかい</label>
+          <input type="radio" name="Level" value="2" id="normal">
+          <label for="normal">ふつう</label>
+          <input type="radio" name="Level" value="3" id="hard">
+          <label for="hard">ながい</label>
+        </div>
+        <button id="Fset">もんだいさくせい</button>
+      </div>
+    </div>
+      
+    <div class="formulaContainer flex2">
+      <dl class="flex" id="parent">
+        <div class="flex2" id="chil">
+        </div>
+      </dl>
+    </div>
+
+    <div class="NumSelectContainer MB MZA">
+      <h2>すうじ</h2>
+      <div class="Num flex">
+        <button value="1" onclick="ClickNum(this)">1</button>
+        <button value="2" onclick="ClickNum(this)">2</button>
+        <button value="3" onclick="ClickNum(this)">3</button>
+        <button value="4" onclick="ClickNum(this)">4</button>
+        <button value="5" onclick="ClickNum(this)">5</button>
+        <button value="6" onclick="ClickNum(this)">6</button>
+        <button value="7" onclick="ClickNum(this)">7</button>
+        <button value="8" onclick="ClickNum(this)">8</button>
+        <button value="9" onclick="ClickNum(this)">9</button>
+        <button value="0" onclick="ClickNum(this)">0</button>
+      </div>      
+    </div>
+
+    <div class="plusMinusContainer flex MB">
+      <button id="plus">+</button>
+      <button id="minus">-</button>
+      <button id="delete">←</button>
+    </div>
+    
+    <div class="ResultContainer">
+      <dl class="flex3">
+        <li id="Answer">こたえる</li>
+        <li id="Reset" value="" onclick="reset(this)">さくじょ</li>
+      </dl>
+    </div>
+
+    
+    <script type="text/JavaScript" src="けいさんもんだいアプリmain.js"></script>
+  </body>
+</html>
